@@ -3,8 +3,8 @@
 angular.module('parqueaderoApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('parqueadero', {
-        url: '/parqueadero',
-        template: '<parqueadero></parqueadero>'
+      .state('pagos-list', {
+        url: '/pagos-list',
+        template: '<pagos-list></pagos-list>'
       });
   });

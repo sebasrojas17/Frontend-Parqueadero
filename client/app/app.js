@@ -6,8 +6,13 @@ angular.module('parqueaderoApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angularMoment',
+  'ngMaterial',
+  'ngAnimate',
+  'ngMessages',
 ])
+.constant('API','http://localhost:8080/Backend-Parqueadero/')
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');

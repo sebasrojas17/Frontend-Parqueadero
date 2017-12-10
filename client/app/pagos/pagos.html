@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-4">
+			<form>
+				<legend>Retirar vehiculo</legend>
+			
+				<div class="form-group">
+					<label for="">Ingrese el numero de la placa</label>
+					<input type="text" class="form-control" id="" placeholder="XYZ-000" ng-model="vm.placa">
+				</div>
+			
+				<button type="submit" class="btn btn-primary" ng-click="vm.consultarPrecio()">Consultar precio</button>
+				<button type="submit" class="btn btn-danger" ng-click="vm.retirar()">Retirar vehiculo</button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<h3 class="lead">Precio parqueo: {{vm.precio.id | currency:$:0}}</h3>
+			<h3 class="lead">Total ingresos: {{vm.total.id | currency:$:0}}</h3>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<legend>Pagos Efectuados</legend>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Fecha pago</th>
+					<th>Placa</th>
+					<th>Tarifa x hora</th>
+					<th>Precio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in vm.pagos">
+					<td>{{item.horaActual | date:"short"}}</td>
+					<td>{{item.idCarros.placa}}</td>
+					<td>{{item.idTarifas.valor | currency:$:00}}</td>
+					<td>{{item.totalPrecio | currency:$:00}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

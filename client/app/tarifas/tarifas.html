@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-4">
+			<form>
+				<legend>Cambiar valor de tarifa</legend>
+			
+				<div class="form-group">
+					<label for="">Ingresa el nuevo valor de la tarifa</label>
+					<input class="form-control" placeholder="Tarifa" ng-model="vm.valor">
+				</div>
+					
+				<button class="btn btn-primary" ng-click="vm.actualizar()">Actualizar</button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-md-4">
+			<h3 class="lead">Valor tarifa actual: {{vm.tarifa.valor | currency:$:0}}</h3>
+		</div>
+	</div>
+</div>
